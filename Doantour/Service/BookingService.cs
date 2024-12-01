@@ -148,6 +148,7 @@ namespace Doantour.Service
             }
 
             booking.StatusBill = "Đã đặt cọc"; // Cập nhật trạng thái
+            booking.Paymented = 100000;
             await _BookingRepository.UpdateAsync(booking);
 
             // Lấy thông tin khách hàng từ repository
